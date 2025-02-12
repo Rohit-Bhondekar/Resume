@@ -477,7 +477,7 @@ header{
      margin-top: -5vh;
     }
     .services{
-      margin-top: 30vh;
+      margin-top: 10vh;
     }
     .services .ser_card{
       flex-direction: column;
@@ -486,7 +486,7 @@ header{
       gap: 8vw;
     }
     .services .ser_card .card{
-      width: 50vw;
+      width: 80vw;
       margin: 0 auto 0 auto;
     }
    .resume .resume_content{
@@ -500,7 +500,7 @@ header{
       margin: 0 auto 0 auto;
     }
     .resume .resume_content .rieght .edu_detail .card{
-      width: 50vw;
+      width: 80vw;
       font-size: 12.5px;
     }
     .resume .resume_content .rieght .skill_det .sk_card{
