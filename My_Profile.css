@@ -20,7 +20,7 @@ body{
 }
 header{
     height: 8vh;
-    width: 100vw;
+    width: 100%;
     border-bottom: solid 3px var(--white-color);
 }
 .logo{
@@ -30,13 +30,12 @@ header{
 }
 .home{
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    /* background-color: var(--second-bg-color); */
 }
 .left{
     height: 70vh;
-    width: 50vw;
+    width: 49vw;
 }
 .home .left button{
   height: 8vh;
@@ -53,17 +52,22 @@ header{
 }
 .rieght{
     height: 70vh;
-    width: 50vw;
-    padding-left: 10vw;
+    width: 49vw;
+    /* padding-left: 10vw; */
+    padding-left: calc(50vw - 40vw);
     padding-top: 10vh;
+}
+.rieght.home-img{
+  height: auto;
+  width: 33vw;
 }
   .animation {
     font: bold 200% Consolas, Monaco, monospace;
     border-right: .1em solid black;
-    width: 28.20ch;
+    width: 15ch;
     color: var(--white-color);
     font-size: 2rem;
-    margin: 2em 2em;
+    margin: 2em 1em;
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: typing 20s infinite,blink-caret 15s infinite;
@@ -81,9 +85,9 @@ header{
   }
   /* From Uiverse.io by JkHuger */ 
 .container {
-    width: 400px;
+    width: 390px;
     height: 50px;
-    margin-left: 4vw;
+    margin-left: .5vw;
   }
   
   .content {
@@ -104,12 +108,12 @@ header{
   }
   
   .content__container:before {
-    content: '[';
+    content: '';
     left: 0;
   }
   
   .content__container:after {
-    content: ']';
+    content: '';
     position: absolute;
     right: 0;
   }
@@ -464,7 +468,7 @@ header{
   }
     .home{
       flex-direction: column;
-      height:62.5vh;
+      height:45vh;
       width: 100%;
     }
     .home .left button{
@@ -478,30 +482,35 @@ header{
      margin-top: -5vh;
     }
     .services{
-      margin-top: 10vh;
+      margin-top: 30vh;
     }
     .services .ser_card{
       flex-direction: column;
       width: 100%;
       height: inherit;
       gap: 8vw;
+      text-align: center;
+      /* padding: 0 auto 0 auto; */
     }
     .services .ser_card .card{
-      width: 80vw;
-      margin: 0 auto 0 auto;
+      width: 85vw;
+      height: 50vh;
+      /* margin: 0 auto 0 auto; */
     }
    .resume .resume_content{
         display: block;
     }
     .resume .resume_content .left{
-      width: 80vw;
+      width: 100vw;
       margin: 0 auto 0 auto;
     }
     .resume .resume_content .rieght{
-      margin: 0 auto 0 auto;
+      width: 100vw;
+      padding: 0 auto 0 auto;
     }
     .resume .resume_content .rieght .edu_detail .card{
-      width: 80vw;
+      width: 85vw;
+      height: 50vh;
       font-size: 12.5px;
     }
     .resume .resume_content .rieght .skill_det .sk_card{
@@ -512,7 +521,8 @@ header{
       text-align: center;
     }
     .project .pr_con .pr_item img{
-      width: 50vw
+      width: 85vw;
+      height: 50vh;
     }
     .about .con{
       flex-direction: column;
@@ -525,7 +535,7 @@ header{
       width: 100vw;
     }
     .about .con .form-con form{
-      width: 60vw;
+      width: 85vw;
       height: auto;
     }
     .about .con .form-con form input{
@@ -533,6 +543,6 @@ header{
     }
     .about .con .form-con form button{
       width: 25vw;
-      margin: 2vw;
+      margin: 4vw;
     }
 }
